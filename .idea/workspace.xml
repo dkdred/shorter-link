@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4b67807-e1a1-460e-a0b2-50f1c750ee10" name="Changes" comment="" />
+    <list default="true" id="c4b67807-e1a1-460e-a0b2-50f1c750ee10" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diploma/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/src/app.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diploma/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diploma/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/src/app.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diploma/src/campaign/campaign.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/src/campaign/campaign.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diploma/src/campaign/campaign.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/src/campaign/campaign.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diploma/src/campaign/campaign.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/src/campaign/campaign.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diploma/src/campaign/dto/create-campaign.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/src/campaign/dto/create-campaign.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diploma/src/click/click.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/src/campaign/click.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diploma/src/click/click.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/src/click/click.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diploma/src/click/click.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/src/click/click.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diploma/src/configs/mongo.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/src/configs/mongo.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fron/src/app/create/create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fron/src/app/create/create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fron/src/app/interceptor.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fron/src/app/interceptor.interceptor.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,10 +42,15 @@
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/snap/webstorm/254/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "/home/os/nest/shorter-link/diploma/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/diploma/src/campaign" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/diploma/package.json" />
@@ -63,6 +83,7 @@
       <workItem from="1650554551702" duration="420000" />
       <workItem from="1650803184179" duration="2512000" />
       <workItem from="1650893609577" duration="21218000" />
+      <workItem from="1651071543138" duration="10353000" />
     </task>
     <servers />
   </component>

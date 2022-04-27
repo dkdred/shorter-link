@@ -4,7 +4,6 @@ import { TypegooseModuleOptions } from 'nestjs-typegoose/dist/typegoose-options.
 export const getMongoConfig = async (
   configService: ConfigService,
 ): Promise<TypegooseModuleOptions> => {
-  console.log(configService.get('MONGO_AUTHDATABASE'));
   return {
     uri: getMongoString(configService),
     ...getMongoOptions(),

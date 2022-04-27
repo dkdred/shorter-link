@@ -6,7 +6,7 @@ export class ClickModel extends TimeStamps {
   @Prop()
   user_id: number;
   @Prop()
-  campaign_id: number;
+  campaign_id: string;
   @Prop()
   browser: string;
   @Prop()

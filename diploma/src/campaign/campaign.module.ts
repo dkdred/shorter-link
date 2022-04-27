@@ -3,6 +3,7 @@ import { CampaignController } from './campaign.controller';
 import { TypegooseModule } from 'nestjs-typegoose';
 import { CampaignModel } from './campaign.model';
 import { CampaignService } from './campaign.service';
+import {ClickModel} from "./click.model";
 
 @Module({
   controllers: [CampaignController],
@@ -12,6 +13,12 @@ import { CampaignService } from './campaign.service';
         typegooseClass: CampaignModel,
         schemaOptions: {
           collection: 'Campaign',
+        },
+      },
+      {
+        typegooseClass: ClickModel,
+        schemaOptions: {
+          collection: 'Click',
         },
       },
     ]),

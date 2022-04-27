@@ -14,7 +14,6 @@ export class CreateComponent implements OnInit {
 
   ngOnInit(): void {
     this.connect.getAllCampaign().subscribe(res => {
-      console.log(res);
     });
 
   }

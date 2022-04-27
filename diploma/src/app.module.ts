@@ -1,11 +1,11 @@
-import { Module } from '@nestjs/common';
+import {forwardRef, Module} from '@nestjs/common';
 import { AppService } from './app.service';
 import { CampaignModule } from './campaign/campaign.module';
 import { ClickModule } from './click/click.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypegooseModule } from 'nestjs-typegoose';
 import { getMongoConfig } from './configs/mongo.config';
-
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -15,10 +15,9 @@ import { getMongoConfig } from './configs/mongo.config';
       inject: [ConfigService],
       useFactory: getMongoConfig,
     }),
-    CampaignModule,
-    ClickModule,
+    forwardRef(() => CampaignModule),
   ],
-  controllers: [],
-  providers: [AppService],
+  controllers: [AppController],
+  providers: [],
 })
 export class AppModule {}

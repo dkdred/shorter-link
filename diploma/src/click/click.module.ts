@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { ClickController } from './click.controller';
 import { ClickService } from './click.service';
 import { TypegooseModule } from 'nestjs-typegoose';
-import { ClickModel } from './click.model';
+import { ClickModel } from '../campaign/click.model';
 
 @Module({
   controllers: [ClickController],

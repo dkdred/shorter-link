@@ -1,16 +1,17 @@
 import { Injectable } from '@nestjs/common';
 import { CampaignModel } from './campaign.model';
-import { ModelType } from '@typegoose/typegoose/lib/types';
 import { CreateCampaignDto } from './dto/create-campaign.dto';
 import { InjectModel } from 'nestjs-typegoose';
 import { Model } from 'mongoose';
-import { v4 as uuidv4 } from 'uuid';
+import {ClickModel} from "./click.model";
 
 @Injectable()
 export class CampaignService {
   constructor(
     @InjectModel(CampaignModel)
     private campaignModel: Model<CampaignModel>,
+    @InjectModel(ClickModel)
+    private clickModel: Model<ClickModel>,
   ) {}
 
   async create(dto: CreateCampaignDto): Promise<CampaignModel> {
@@ -25,5 +26,15 @@ export class CampaignService {
 
   getCampaign(): Promise<CampaignModel[]> {
     return this.campaignModel.find().exec();
+  }
+
+  async createClick(id: any): Promise<ClickModel> {
+    console.log(id);
+    const click = new this.clickModel({ campaign_id: id });
+    return click.save();
+  }
+
+  async getAllClick(): Promise<ClickModel[]> {
+    return this.clickModel.find().exec();
   }
 }
