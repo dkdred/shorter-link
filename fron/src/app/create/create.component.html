@@ -1,8 +1,27 @@
 <div class="create">
-    <form action="">
+    <div class="create__form">
+        <mat-label class="create__title">Создание сокращенный ссылки</mat-label>
         <mat-form-field>
-            <mat-label>url</mat-label>
-            <input matInput  type="url">
+            <mat-label>Введите имеющуюся ссылку</mat-label>
+            <input [(ngModel)]="dest_url" matInput type="dest_url">
         </mat-form-field>
-    </form>
+        <mat-form-field>
+            <mat-label>Введите название рекламной кампании</mat-label>
+            <input [(ngModel)]="campaign_name" matInput type="campaign_name">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Введите место где будет размещена сокращенная ссылка</mat-label>
+            <input [(ngModel)]="src" matInput type="src">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Введите сокращенный url</mat-label>
+            <input [(ngModel)]="shorted_url" class="create__input" matInput type="shorted_url">
+        </mat-form-field>
+        <div class="create__button-block">
+            <mat-spinner class="create__spin" *ngIf="isLoading"></mat-spinner>
+            <button *ngIf="!isLoading" (click)="createShorURL()" class="create__button" type="submit">
+                Создать
+            </button>
+        </div>
+    </div>
 </div>

@@ -1,11 +1,11 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, Scope } from '@nestjs/common';
 import { CampaignModel } from './campaign.model';
 import { CreateCampaignDto } from './dto/create-campaign.dto';
 import { InjectModel } from 'nestjs-typegoose';
 import { Model } from 'mongoose';
-import {ClickModel} from "./click.model";
+import { ClickModel } from './click.model';
 
-@Injectable()
+@Injectable({ scope: Scope.REQUEST })
 export class CampaignService {
   constructor(
     @InjectModel(CampaignModel)
@@ -24,8 +24,9 @@ export class CampaignService {
     return this.campaignModel.findOne({ shorted_url: shortUrl });
   }
 
-  getCampaign(): Promise<CampaignModel[]> {
+  getAllCampaign(): Promise<CampaignModel[]> {
     return this.campaignModel.find().exec();
+
   }
 
   async createClick(id: any): Promise<ClickModel> {

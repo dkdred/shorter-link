@@ -7,24 +7,23 @@ import {
   Patch,
   Post,
   Res,
+  Scope,
 } from '@nestjs/common';
 import { CampaignModel } from './campaign.model';
 import { CreateCampaignDto } from './dto/create-campaign.dto';
 import { CampaignService } from './campaign.service';
 import { Response } from 'express';
 
-@Controller()
+@Controller({
+  path: '',
+  scope: Scope.REQUEST,
+})
 export class CampaignController {
   constructor(private campaignService: CampaignService) {}
 
-  @Get('campaign/')
-  async getKek() {
-    return 'kek';
-  }
-
-  @Get('campaign/getCampaign')
+  @Get('campaign/getCampaignAll')
   async getCampaign() {
-    return this.campaignService.getCampaign();
+    return this.campaignService.getAllCampaign();
   }
 
   @Post('campaign/create')
@@ -41,11 +40,12 @@ export class CampaignController {
     @Res() res: Response,
   ): Promise<any> {
     try {
+      console.log(short_url);
       const url = await this.campaignService.findByShort(short_url);
       console.log(url._id);
       if (url) {
-        // await this.campaignService.createClick(url._id);
-        this.createClick(url._id);
+        await this.campaignService.createClick(url._id);
+        // this.createClick(url._id);
         return res.redirect(HttpStatus.PERMANENT_REDIRECT, url.dest_url);
       } else {
         return res.status(HttpStatus.NOT_FOUND).json('Not found');
@@ -53,10 +53,6 @@ export class CampaignController {
     } catch (error) {
       res.status(HttpStatus.INTERNAL_SERVER_ERROR).json('Error');
     }
-  }
-
-  createClick(id: any) {
-    return this.campaignService.createClick(id);
   }
 
   @Get('click/getAll')

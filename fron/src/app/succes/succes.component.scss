@@ -1,0 +1,26 @@
+.success{
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: grey;
+  width: 30%;
+  border-radius: 20px;
+  &__form{
+    display: flex;
+    flex-direction: column;
+
+  }
+  &__label{
+    display: flex;
+    flex-direction: row;
+  }
+  &__btn{
+    padding: 15px 10px;
+    border-radius: 15px;
+    border: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 5px;
+    background-color: darkmagenta;
+  }
+}

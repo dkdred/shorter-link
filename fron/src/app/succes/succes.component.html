@@ -1,0 +1,11 @@
+<div  class="success">
+    <div *ngIf="isShorted" class="success__form">
+        <mat-form-field class="success__label">
+            <input [(ngModel)]="shorted_url" matInput type="dest_url">
+        </mat-form-field>
+        <button [cdkCopyToClipboard]="shorted_url" class="success__btn">Копировать</button>
+    </div>
+    <div *ngIf="!isShorted">
+        <h3>Упс, что-то пошло не так...</h3>
+    </div>
+</div>

@@ -14,7 +14,7 @@ export class InterceptorService implements HttpInterceptor {
   constructor() {}
 
   intercept(request: HttpRequest<any>, next: HttpHandler) {
-    const req: HttpRequest<any> = request.clone({url: 'http://localhost:3000/api/' + request.url});
+    const req: HttpRequest<any> = request.clone({url: environment.devRef + request.url});
     return next.handle(req);
   }
 }

@@ -11,13 +11,16 @@ import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatInputModule } from "@angular/material/input";
 import {HTTP_INTERCEPTORS, HttpClientModule, HttpClient} from "@angular/common/http";
-import {MatSpinner} from "@angular/material/progress-spinner";
+import {MatProgressSpinnerModule, MatSpinner} from "@angular/material/progress-spinner";
 import {InterceptorService} from "./interceptor.interceptor";
+import { SuccesComponent } from './succes/succes.component';
+import {ClipboardModule} from "@angular/cdk/clipboard";
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreateComponent
+    CreateComponent,
+    SuccesComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,8 @@ import {InterceptorService} from "./interceptor.interceptor";
     MatInputModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MatProgressSpinnerModule,
+    ClipboardModule,
     // MatSpinner,
   ],
   providers: [
