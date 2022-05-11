@@ -1,7 +1,7 @@
 import {
   Body,
   Controller,
-  Get,
+  Get, HttpCode,
   HttpStatus,
   Param,
   Patch,
@@ -35,6 +35,7 @@ export class CampaignController {
   async patch(@Param('id') id: string, @Body() dto: CampaignModel) {}
 
   @Get(':short_url')
+  @HttpCode(307)
   async redirectTo(
     @Param('short_url') short_url: string,
     @Res() res: Response,
@@ -46,7 +47,10 @@ export class CampaignController {
       if (url) {
         await this.campaignService.createClick(url._id);
         // this.createClick(url._id);
-        return res.redirect(HttpStatus.PERMANENT_REDIRECT, url.dest_url);
+        const dest =
+          url.dest_url + `/?campaign_name=${url.campaign_name}&src=${url.src}`;
+        console.log(dest);
+        return res.redirect(dest);
       } else {
         return res.status(HttpStatus.NOT_FOUND).json('Not found');
       }

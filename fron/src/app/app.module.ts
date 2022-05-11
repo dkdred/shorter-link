@@ -15,12 +15,15 @@ import {MatProgressSpinnerModule, MatSpinner} from "@angular/material/progress-s
 import {InterceptorService} from "./interceptor.interceptor";
 import { SuccesComponent } from './succes/succes.component';
 import {ClipboardModule} from "@angular/cdk/clipboard";
+import { ClickTableComponent } from './click-table/click-table.component';
+import {MatTableModule} from "@angular/material/table";
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateComponent,
-    SuccesComponent
+    SuccesComponent,
+    ClickTableComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +37,7 @@ import {ClipboardModule} from "@angular/cdk/clipboard";
     HttpClientModule,
     MatProgressSpinnerModule,
     ClipboardModule,
+    MatTableModule,
     // MatSpinner,
   ],
   providers: [

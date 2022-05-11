@@ -4,6 +4,7 @@ import { CreateCampaignDto } from './dto/create-campaign.dto';
 import { InjectModel } from 'nestjs-typegoose';
 import { Model } from 'mongoose';
 import { ClickModel } from './click.model';
+import {allVirtualoptions} from "@typegoose/typegoose/lib/internal/utils";
 
 @Injectable({ scope: Scope.REQUEST })
 export class CampaignService {
@@ -36,6 +37,6 @@ export class CampaignService {
   }
 
   async getAllClick(): Promise<ClickModel[]> {
-    return this.clickModel.find().exec();
+    return this.clickModel.find().populate('campaign_id').exec();
   }
 }

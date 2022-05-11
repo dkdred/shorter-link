@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4b67807-e1a1-460e-a0b2-50f1c750ee10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fron/src/assets/copy-regular.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diploma/src/campaign/campaign.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/src/campaign/campaign.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diploma/src/campaign/campaign.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/src/campaign/campaign.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diploma/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diploma/src/campaign/click.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/diploma/src/campaign/click.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fron/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fron/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fron/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fron/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fron/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/fron/src/app/app.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fron/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fron/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fron/src/app/connect.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fron/src/app/connect.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fron/src/app/create/create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fron/src/app/create/create.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fron/src/app/create/create.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/fron/src/app/create/create.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fron/src/app/create/create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fron/src/app/create/create.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fron/src/app/interceptor.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fron/src/app/interceptor.interceptor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fron/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fron/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fron/src/app/succes/succes.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fron/src/app/succes/succes.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,21 +30,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/os/nest/shorter-link/fron/src/assets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/home/os/nest/shorter-link/fron/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/os/nest/shorter-link/fron/src/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/os/nest/shorter-link/diploma/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/fron/src/assets" />
@@ -60,7 +53,17 @@
       <recent name="$PROJECT_DIR$/diploma/src/campaign" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start:debug">
+    <configuration name="start:debug" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/diploma/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:debug" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/diploma/package.json" />
       <command value="run" />
@@ -73,6 +76,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start:debug" />
         <item itemvalue="npm.start:dev" />
       </list>
     </recent_temporary>
@@ -93,7 +97,11 @@
       <workItem from="1650803184179" duration="2512000" />
       <workItem from="1650893609577" duration="21218000" />
       <workItem from="1651071543138" duration="14711000" />
-      <workItem from="1651245116083" duration="11195000" />
+      <workItem from="1651245116083" duration="17607000" />
+      <workItem from="1651494555309" duration="1009000" />
+      <workItem from="1651744756042" duration="14000" />
+      <workItem from="1651827660667" duration="3425000" />
+      <workItem from="1652189207422" duration="6335000" />
     </task>
     <servers />
   </component>
@@ -110,5 +118,31 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/diploma/src/campaign/campaign.service.ts</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/diploma/src/campaign/campaign.service.ts</url>
+          <line>35</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/diploma/src/campaign/campaign.controller.ts</url>
+          <line>47</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/diploma/src/campaign/campaign.controller.ts</url>
+          <line>43</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
